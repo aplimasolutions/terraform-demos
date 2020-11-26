@@ -18,24 +18,24 @@
 
 ## Steps
 * Be sure you are in the **jenkins-ec2** directory.
-* Create a file named *terraform.tfvars*.
+* Create a file named ***terraform.tfvars***.
 - Add the following content to this file:
     - **ssh_key_name = "<YOUR SSH KEY NAME"**
     - **region = "AWS REGION"**
     - **instance_type = "INSTANCE_TYPE"**
 
     - **NOTE**
-        - *ssh_key_name* is the name of the SSH Key you use to connect to your EC2 instance.
-        - *region* is an AWS region that is closest to you. Example, us-east-1, eu-west-1 etc.
-        - *instance_type* is an AWS EC2 instance type. Example: t2.medium, t2.small etc.
+        - ***ssh_key_name*** is the name of the SSH Key you use to connect to your EC2 instance.
+        - ***region*** is an AWS region that is closest to you. Example, us-east-1, eu-west-1 etc.
+        - ***instance_type*** is an AWS EC2 instance type. Example: t2.medium, t2.small etc.
 
-* Run the command *terraform init* to initialize your working directory.
+* Run the command ***terraform init*** to initialize your working directory.
 
-* Run the command *terraform apply* and follow the prompts to provision your EC2 Instance.
+* Run the command ***terraform apply*** and follow the prompts to provision your EC2 Instance.
 
 * To verify if Jenkins is up and running, open a browser of your choice and enter 
-http://<PUBLIC_IP_EC2_INSTANCE>:8080
+***http://<PUBLIC_IP_EC2_INSTANCE>:8080***
 
 * Follow the prompts to complete the post-installazation wizard steps.
 
-* If you no longer need the EC2 instance, run the command, *terraform destroy*
+* If you no longer need the EC2 instance, run the command, ***terraform destroy***
