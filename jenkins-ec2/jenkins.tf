@@ -33,7 +33,7 @@ resource "aws_instance" "JenkinsEC2" {
   key_name               = var.ssh_key_name
 
   tags = {
-    Name = "terraform-jenkins-testing"
+    Name = "terraform-jenkins-master"
   }
   user_data = file("userdata.sh")
 
