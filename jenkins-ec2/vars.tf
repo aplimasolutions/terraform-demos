@@ -11,7 +11,7 @@ variable "ssh_key_name" {
   type = string
 }
 #
-# List Variable
+# String Variable
 #
 variable "instance_type" {
   type    = string
