@@ -1,4 +1,4 @@
-# How to install Jenkins LTS on an Ubuntu 18.04 LTS EC2 instance?
+# How to install Jenkins LTS on an Ubuntu 18.04 LTS EC2 instance in default VPC?
 
 ## Prerequisites
 
@@ -26,8 +26,6 @@
 
     - **NOTE**
         - ***ssh_key_name*** is the name of the SSH Key you use to connect to your EC2 instance.
-        - ***region*** is an AWS region that is closest to you. Example, us-east-1, eu-west-1 etc.
-        - ***instance_type*** is an AWS EC2 instance type. Example: t2.medium, t2.small etc.
 
 * Run the command ***terraform init*** to initialize your working directory.
 
