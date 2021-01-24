@@ -44,3 +44,9 @@ with multiple Availability Zones using:
 * Run the command ***terraform init*** to initialize your working directory.
 
 * Run the command ***terraform apply*** and follow the prompts to provision your highly available Jenkins infrastructure.
+
+* If everything runs successfully, terraform will output ALB DNS Name and EFS DNS Name. 
+  Enter the ALB DNS Name on a browser. You should see the unlock Jenkins screen. Follow the instructions to set up your 
+  Jenkins master.
+
+* Note: Incase your primary Jenkins server goes down, a new one will automatically be provisioned.
