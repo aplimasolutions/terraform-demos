@@ -124,7 +124,7 @@ data "aws_ami" "ubuntu" {
 
 # Create Jenkins server Launch configuration
 resource "aws_launch_configuration" "jenkinslc" {
-  name            = "aws_lc"
+  name_prefix     = "aws_lc-"
   image_id        = data.aws_ami.ubuntu.id
   instance_type   = var.instance_type
   key_name        = var.ssh_key_name
